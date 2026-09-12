@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>For Varshu ❤️</title>
+
+
+<style>
+
+/* =====================================================
+   BASIC RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+}
+
+body {
+
+    font-family: Georgia, serif;
+
+    color: #5c4050;
+
+    background: #fff5f8;
+
+}
+
+
+/* =====================================================
+   COMMON
+===================================================== */
+
+button {
+
+    margin-top: 25px;
+
+    padding: 15px 32px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c86f8d,
+            #a878a8
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-family: Georgia, serif;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(170,100,130,0.22);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+button:hover {
+
+    transform: translateY(-3px) scale(1.04);
+
+    box-shadow:
+        0 15px 35px
+        rgba(170,100,130,0.35);
+
+}
+
+
+/* =====================================================
+   SCREEN 1
+===================================================== */
+
+#opening {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(246,220,229,0.9),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(233,224,244,0.9),
+            transparent 32%
+        ),
+
+        #fffaf8;
+
+    animation:
+        openingAppear
+        1.2s
+        ease;
+
+}
+
+
+.opening-content {
+
+    position: relative;
+
+    z-index: 10;
+
+    width: min(680px, 95%);
+
+}
+
+
+.opening-heart {
+
+    font-size: 32px;
+
+    animation:
+        heartbeat
+        2s
+        ease-in-out
+        infinite;
+
+}
+
+
+#opening h1 {
+
+    margin: 12px 0 25px;
+
+    font-size:
+        clamp(
+            42px,
+            8vw,
+            68px
+        );
+
+    color: #7f536d;
+
+}
+
+
+#opening p {
+
+    font-size:
+        clamp(
+            16px,
+            2.5vw,
+            19px
+        );
+
+    line-height: 1.8;
+
+    margin: 13px auto;
+
+}
+
+
+.opening-quote {
+
+    margin-top: 25px !important;
+
+    font-size: 21px !important;
+
+    font-style: italic;
+
+    color: #8d6179;
+
+}
+
+
+.opening-button {
+
+    animation:
+        buttonPulse
+        2.2s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes openingAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.18);
+
+    }
+
+}
+
+
+@keyframes buttonPulse {
+
+    0%,
+    100% {
+
+        box-shadow:
+            0 10px 25px
+            rgba(170,100,130,0.22);
+
+    }
+
+    50% {
+
+        box-shadow:
+            0 10px 35px
+            rgba(200,111,141,0.45);
+
+    }
+
+}
+
+
+/* =====================================================
+   FLOATING HEARTS - SCREEN 1
+===================================================== */
+
+.background-heart {
+
+    position: absolute;
+
+    bottom: -40px;
+
+    opacity: 0;
+
+    font-size: 20px;
+
+    animation:
+        backgroundHeart
+        7s
+        linear
+        infinite;
+
+}
+
+
+@keyframes backgroundHeart {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(0)
+            rotate(0);
+
+    }
+
+    15% {
+
+        opacity: .7;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateY(-110vh)
+            translateX(50px)
+            rotate(25deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   SCREEN 2
+===================================================== */
+
+#birthday {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #ffffff 0%,
+            #fff3f7 42%,
+            #eee6f5 100%
+        );
+
+}
+
+
+/* =====================================================
+   BIRTHDAY CONTENT
+===================================================== */
+
+.birthday-content {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+
+    transform:
+        translate(-50%, -50%);
+
+    z-index: 20;
+
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+.gift {
+
+    position: relative;
+
+    width: 180px;
+    height: 160px;
+
+    margin: 0 auto;
+
+    z-index: 20;
+
+    animation:
+        giftFloat
+        2s
+        ease-in-out
+        infinite;
+
+}
+
+
+.gift-box {
+
+    position: absolute;
+
+    bottom: 0;
+    left: 15px;
+
+    width: 150px;
+    height: 105px;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d9829e,
+            #c86f8d
+        );
+
+    box-shadow:
+        0 20px 40px
+        rgba(150,70,105,0.28);
+
+    z-index: 5;
+
+}
+
+
+/* Vertical ribbon */
+
+.gift-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 62px;
+
+    top: 0;
+
+    width: 27px;
+
+    height: 105px;
+
+    background: #f6d6e1;
+
+}
+
+
+/* Horizontal ribbon */
+
+.gift-box::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 38px;
+
+    width: 150px;
+
+    height: 25px;
+
+    background: #f6d6e1;
+
+}
+
+
+/* =====================================================
+   GIFT LID
+===================================================== */
+
+.gift-lid {
+
+    position: absolute;
+
+    left: 5px;
+
+    top: 18px;
+
+    width: 170px;
+
+    height: 37px;
+
+    border-radius: 7px;
+
+    background: #bc627f;
+
+    z-index: 10;
+
+    transform-origin: center bottom;
+
+    transition:
+
+        top .9s
+        cubic-bezier(.2,.8,.2,1),
+
+        transform .9s
+        cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+.gift-lid::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 71px;
+
+    top: 0;
+
+    width: 28px;
+
+    height: 37px;
+
+    background: #f6d6e1;
+
+}
+
+
+/* =====================================================
+   BOW
+===================================================== */
+
+.bow {
+
+    position: absolute;
+
+    top: -27px;
+
+    left: 50%;
+
+    width: 80px;
+
+    height: 45px;
+
+    transform:
+        translateX(-50%);
+
+}
+
+
+.bow-left,
+.bow-right {
+
+    position: absolute;
+
+    width: 44px;
+    height: 33px;
+
+    background: #e5a5ba;
+
+    border-radius: 50%;
+
+}
+
+
+.bow-left {
+
+    left: 0;
+
+    transform:
+        rotate(-25deg);
+
+}
+
+
+.bow-right {
+
+    right: 0;
+
+    transform:
+        rotate(25deg);
+
+}
+
+
+.bow-center {
+
+    position: absolute;
+
+    left: 30px;
+    top: 8px;
+
+    width: 21px;
+    height: 21px;
+
+    background: #d7849f;
+
+    border-radius: 50%;
+
+}
+
+
+/* =====================================================
+   GIFT SHAKE
+===================================================== */
+
+.gift.shake {
+
+    animation:
+        giftShake
+        .8s
+        ease-in-out;
+
+}
+
+
+@keyframes giftShake {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(-6deg);
+    }
+
+    30% {
+        transform: rotate(6deg);
+    }
+
+    45% {
+        transform: rotate(-6deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+
+}
+
+
+/* =====================================================
+   GIFT FLOAT
+===================================================== */
+
+@keyframes giftFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-10px);
+
+    }
+
+}
+
+
+/* =====================================================
+   OPEN LID
+===================================================== */
+
+.gift.open {
+
+    animation: none;
+
+}
+
+
+.gift.open .gift-lid {
+
+    top: -105px;
+
+    transform:
+        rotate(-18deg)
+        translateX(-32px);
+
+}
+
+
+/* =====================================================
+   LIGHT BURST
+===================================================== */
+
+.gift.open::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 45px;
+
+    width: 60px;
+    height: 60px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #ffffff,
+            #ffe0ec 35%,
+            transparent 70%
+        );
+
+    animation:
+        lightBurst
+        1.2s
+        ease-out
+        forwards;
+
+    z-index: 2;
+
+}
+
+
+@keyframes lightBurst {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            scale(.2);
+
+    }
+
+    40% {
+
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            scale(3);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            scale(5);
+
+    }
+
+}
+
+
+/* =====================================================
+   BIRTHDAY TEXT
+===================================================== */
+
+/* =====================================================
+   BIRTHDAY TEXT - FIXED POSITION
+===================================================== */
+
+.birthday-text {
+
+    position: absolute;
+
+    left: 50%;
+
+    /*
+       Start from inside/behind the gift
+    */
+
+    top: 105px;
+
+    width: 100%;
+
+    opacity: 0;
+
+    transform:
+        translate(-50%, 70px)
+        scale(.35);
+
+    z-index: 30;
+
+    pointer-events: none;
+
+}
+
+
+.birthday-text.show {
+
+    animation:
+        messageFromBox
+        1.7s
+        cubic-bezier(.2,.85,.25,1.15)
+        forwards;
+
+}
+
+
+.birthday-text h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            43px,
+            9vw,
+            78px
+        );
+
+    color: #a85376;
+
+    text-shadow:
+
+        0 0 8px white,
+
+        0 0 18px
+        rgba(200,111,141,.35),
+
+        0 0 35px
+        rgba(230,168,189,.25);
+
+    animation:
+        birthdayGlow
+        2s
+        ease-in-out
+        infinite alternate;
+
+}
+
+
+.birthday-text h2 {
+
+    margin: 5px 0;
+
+    font-size:
+        clamp(
+            32px,
+            6vw,
+            58px
+        );
+
+    color: #755277;
+
+    animation:
+        namePulse
+        2s
+        ease-in-out
+        infinite alternate;
+
+}
+
+
+.birthday-text p {
+
+    font-size: 17px;
+
+    color: #795d6d;
+
+}
+
+
+@keyframes messageFromBox {
+
+    /* =================================
+       START - hidden inside the box
+    ================================= */
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translate(-50%, 70px)
+            scale(.35);
+
+    }
+
+
+    /* =================================
+       BEGIN TO APPEAR
+    ================================= */
+
+    25% {
+
+        opacity: 1;
+
+        transform:
+            translate(-50%, 20px)
+            scale(.65);
+
+    }
+
+
+    /* =================================
+       RISE OUT OF THE GIFT
+    ================================= */
+
+    55% {
+
+        opacity: 1;
+
+        transform:
+            translate(-50%, -120px)
+            scale(1.08);
+
+    }
+
+
+    /* =================================
+       LITTLE BOUNCE
+    ================================= */
+
+    75% {
+
+        transform:
+            translate(-50%, -175px)
+            scale(.98);
+
+    }
+
+
+    88% {
+
+        transform:
+            translate(-50%, -155px)
+            scale(1.02);
+
+    }
+
+
+    /* =================================
+       FINAL POSITION
+    ================================= */
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translate(-50%, -165px)
+            scale(1);
+
+    }
+
+}
+
+
+@keyframes birthdayGlow {
+
+    from {
+
+        text-shadow:
+            0 0 7px white;
+
+    }
+
+    to {
+
+        text-shadow:
+
+            0 0 10px white,
+
+            0 0 22px
+            rgba(200,111,141,.45),
+
+            0 0 38px
+            rgba(230,168,189,.3);
+
+    }
+
+}
+
+
+@keyframes namePulse {
+
+    from {
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        transform: scale(1.04);
+
+    }
+
+}
+
+
+/* =====================================================
+   CONTINUE BUTTON
+===================================================== */
+
+.continue {
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+
+.continue.show {
+
+    animation:
+        continueAppear
+        1s
+        ease
+        forwards;
+
+    pointer-events: auto;
+
+}
+
+
+@keyframes continueAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   BALLOONS
+===================================================== */
+
+.balloon {
+
+    position: absolute;
+
+    bottom: -120px;
+
+    width: 48px;
+    height: 65px;
+
+    border-radius:
+        50%
+        50%
+        45%
+        45%;
+
+    opacity: 0;
+
+    z-index: 5;
+
+}
+
+
+.balloon::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 63px;
+
+    left: 50%;
+
+    width: 1px;
+    height: 120px;
+
+    background: #9b858d;
+
+}
+
+
+.balloon.fly {
+
+    animation:
+        balloonRise
+        6s
+        ease-out
+        forwards;
+
+}
+
+
+.balloon1 {
+
+    left: 5%;
+
+    background: #e6a8bd;
+
+}
+
+
+.balloon2 {
+
+    left: 20%;
+
+    background: #bba4d3;
+
+}
+
+
+.balloon3 {
+
+    right: 20%;
+
+    background: #e4c97f;
+
+}
+
+
+.balloon4 {
+
+    right: 5%;
+
+    background: #d98ba5;
+
+}
+
+
+.balloon5 {
+
+    left: 47%;
+
+    background: #eadbea;
+
+}
+
+
+@keyframes balloonRise {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(-5deg);
+
+    }
+
+    10% {
+
+        opacity: 1;
+
+    }
+
+    45% {
+
+        transform:
+            translateY(-55vh)
+            translateX(40px)
+            rotate(8deg);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateY(-125vh)
+            translateX(-35px)
+            rotate(-8deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti-piece {
+
+    position: absolute;
+
+    top: -30px;
+
+    width: 9px;
+    height: 18px;
+
+    opacity: 0;
+
+    z-index: 35;
+
+}
+
+
+.confetti-piece.fly {
+
+    animation:
+        confettiFall
+        4s
+        linear
+        forwards;
+
+}
+
+
+@keyframes confettiFall {
+
+    0% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            rotate(0)
+            translateX(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(55vh)
+            rotate(400deg)
+            translateX(40px);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateY(115vh)
+            rotate(800deg)
+            translateX(-40px);
+
+    }
+
+}
+
+
+/* =====================================================
+   RIBBONS
+===================================================== */
+
+.ribbon {
+
+    position: absolute;
+
+    width: 120px;
+    height: 15px;
+
+    border-radius: 20px;
+
+    opacity: 0;
+
+    z-index: 30;
+
+}
+
+
+.ribbon.fly {
+
+    animation:
+        ribbonBurst
+        1.5s
+        ease-out
+        forwards;
+
+}
+
+
+.ribbon1 {
+
+    top: 30%;
+    left: 5%;
+
+    background: #c86f8d;
+
+}
+
+
+.ribbon2 {
+
+    top: 25%;
+    right: 5%;
+
+    background: #a878a8;
+
+}
+
+
+.ribbon3 {
+
+    bottom: 25%;
+    left: 8%;
+
+    background: #c9a45c;
+
+}
+
+
+.ribbon4 {
+
+    bottom: 20%;
+    right: 8%;
+
+    background: #d88ca5;
+
+}
+
+
+@keyframes ribbonBurst {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            scale(.2)
+            rotate(0);
+
+    }
+
+    40% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        opacity: .8;
+
+        transform:
+            scale(1)
+            rotate(35deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.floating-heart {
+
+    position: absolute;
+
+    bottom: -50px;
+
+    opacity: 0;
+
+    z-index: 25;
+
+    pointer-events: none;
+
+    animation:
+        floatingHeart
+        5s
+        ease-out
+        forwards;
+
+}
+
+
+@keyframes floatingHeart {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(0)
+            scale(.5)
+            rotate(-10deg);
+
+    }
+
+    15% {
+
+        opacity: .9;
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-55vh)
+            translateX(35px)
+            scale(1)
+            rotate(10deg);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateY(-120vh)
+            translateX(-35px)
+            scale(1.3)
+            rotate(-10deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   SPARKLES
+===================================================== */
+
+.sparkle {
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    box-shadow:
+
+        0 0 8px white,
+
+        0 0 18px #e6a8bd;
+
+    opacity: 0;
+
+    z-index: 40;
+
+    pointer-events: none;
+
+    animation:
+        sparkle
+        1.8s
+        ease-in-out
+        forwards;
+
+}
+
+
+@keyframes sparkle {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            scale(0);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform:
+            scale(1.8);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            scale(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   SCREEN 3
+===================================================== */
+
+#message {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    overflow-y: auto;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #fffaf8,
+            #f8edf2,
+            #eee7f5
+        );
+
+}
+
+
+.message-card {
+
+    width: min(700px, 95%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 35px 30px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.72);
+
+    box-shadow:
+        0 20px 60px
+        rgba(100,70,100,.12);
+
+}
+
+
+#message h1 {
+
+    font-size:
+        clamp(
+            35px,
+            7vw,
+            50px
+        );
+
+    color: #8e5d78;
+
+}
+
+
+#message p {
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #5d5260;
+
+}
+
+
+/* =====================================================
+   SCREEN 3 PARTICLE TRANSITION
+===================================================== */
+
+.transition-particle {
+
+    position: fixed;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #e6a8bd;
+
+    z-index: 100;
+
+    pointer-events: none;
+
+    animation:
+        dissolveParticle
+        1.4s
+        ease-out
+        forwards;
+
+}
+
+
+@keyframes dissolveParticle {
+
+    0% {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translate(
+                var(--x),
+                var(--y)
+            )
+            scale(.1);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    #opening h1 {
+
+        font-size: 43px;
+
+    }
+
+    #opening p {
+
+        font-size: 16px;
+
+    }
+
+    .opening-quote {
+
+        font-size: 18px !important;
+
+    }
+
+    .gift {
+
+        transform: scale(.85);
+
+    }
+
+    .birthday-text h1 {
+
+        font-size: 43px;
+
+    }
+
+    .birthday-text h2 {
+
+        font-size: 34px;
+
+    }
+
+    .birthday-text p {
+
+        font-size: 15px;
+
+    }
+
+    #message {
+
+        padding: 15px;
+
+    }
+
+    .message-card {
+
+        padding: 25px 20px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =====================================================
+     SCREEN 1
+===================================================== -->
+
+<section id="opening">
+
+
+    <!-- BACKGROUND HEARTS -->
+
+    <span class="background-heart"
+          style="left:8%; animation-delay:0s;">
+        ♡
+    </span>
+
+    <span class="background-heart"
+          style="left:20%; animation-delay:2s;">
+        💗
+    </span>
+
+    <span class="background-heart"
+          style="left:35%; animation-delay:4s;">
+        ♡
+    </span>
+
+    <span class="background-heart"
+          style="left:55%; animation-delay:1s;">
+        💕
+    </span>
+
+    <span class="background-heart"
+          style="left:70%; animation-delay:3s;">
+        ♡
+    </span>
+
+    <span class="background-heart"
+          style="left:88%; animation-delay:5s;">
+        💗
+    </span>
+
+
+
+    <div class="opening-content">
+
+
+        <div class="opening-heart">
+            ♡
+        </div>
+
+
+        <h1>
+            Dear Varshu, ❤️
+        </h1>
+
+
+        <p>
+
+            Thank you for being with me,
+            through all the little moments,
+            laughs, memories, and everything
+            in between.
+
+        </p>
+
+
+        <p>
+
+            Today, on your special day,
+            I wanted to wish you
+
+            <strong>
+                all the happiness you deserve.
+            </strong>
+
+        </p>
+
+
+        <p class="opening-quote">
+
+            “Here’s to 20 — to new beginnings,
+            beautiful memories, unexpected happiness,
+            and a year that feels a little more like you.”
+
+        </p>
+
+
+        <p>
+
+            There is something
+            waiting for you inside. 🎁
+
+        </p>
+
+
+        <button
+            class="opening-button"
+            onclick="openSurprise()"
+        >
+
+            ✨ Click here to see ✨
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SCREEN 2
+===================================================== -->
+
+<section id="birthday">
+
+
+    <!-- BALLOONS -->
+
+    <div
+        class="balloon balloon1"
+        id="balloon1">
+    </div>
+
+    <div
+        class="balloon balloon2"
+        id="balloon2">
+    </div>
+
+    <div
+        class="balloon balloon3"
+        id="balloon3">
+    </div>
+
+    <div
+        class="balloon balloon4"
+        id="balloon4">
+    </div>
+
+    <div
+        class="balloon balloon5"
+        id="balloon5">
+    </div>
+
+
+
+    <!-- RIBBONS -->
+
+    <div
+        class="ribbon ribbon1"
+        id="ribbon1">
+    </div>
+
+    <div
+        class="ribbon ribbon2"
+        id="ribbon2">
+    </div>
+
+    <div
+        class="ribbon ribbon3"
+        id="ribbon3">
+    </div>
+
+    <div
+        class="ribbon ribbon4"
+        id="ribbon4">
+    </div>
+
+
+
+    <!-- GIFT -->
+
+    <div class="birthday-content">
+
+
+        <div
+            class="gift"
+            id="gift"
+        >
+
+
+            <div
+                class="gift-lid"
+            >
+
+
+                <div class="bow">
+
+
+                    <div
+                        class="bow-left">
+                    </div>
+
+
+                    <div
+                        class="bow-right">
+                    </div>
+
+
+                    <div
+                        class="bow-center">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                class="gift-box">
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+             MESSAGE COMES OUT OF BOX
+        ========================================== -->
+
+        <div
+            class="birthday-text"
+            id="birthdayText"
+        >
+
+
+            <h1>
+                HAPPY 20TH
+            </h1>
+
+
+            <h2>
+                VARSHU! ❤️
+            </h2>
+
+
+            <p>
+               <b> 🎂✨ May your day be as beautiful
+                as you are! ✨🎂
+		</b>
+            </p>
+
+
+            <button
+                class="continue"
+                id="continueButton"
+                onclick="showMessage()"
+            >
+
+                There's more... →
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- CONFETTI -->
+
+    <div
+        class="confetti-piece"
+        style="left:4%; background:#c86f8d;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:12%; background:#c9a45c;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:21%; background:#9d719e;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:30%; background:#e6a8bd;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:40%; background:#c86f8d;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:50%; background:#c9a45c;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:60%; background:#9d719e;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:70%; background:#e6a8bd;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:82%; background:#c86f8d;">
+    </div>
+
+    <div
+        class="confetti-piece"
+        style="left:94%; background:#c9a45c;">
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SCREEN 3
+===================================================== -->
+
+<section id="message">
+
+
+    <div class="message-card">
+
+
+        <h1>
+            To My Favourite Person, 💌
+        </h1>
+
+        <p>
+
+            Okay… first of all, I still can't believe you're 20! 🥹
+
+        </p>
+	
+	<p>
+	
+	Where did all these years go?
+	
+
+	</p>
+
+        <p>
+
+            You have always been there for me.
+		Whether I was happy, upset, going through a bad phase, or just having one of those days where everything felt too much… you were always there.
+
+
+        </p>
+	<p>
+	And I don't think I tell you this enough, but it really means a lot to me. ❤️
+
+	</p>
+	
+	<p>
+	So yes, you (our adopted child is) are officially turning 20. 🎂😂
+
+	</p>
+
+	<p>
+
+	I hope the next chapter of your life gives you lots of happiness, good memories, success, and everything you deserve.
+
+	</p>	
+
+	
+	<p>
+
+	Happy 20th Birthday, my dear! 🎂🫶🏻
+
+	</p>
+
+
+        <p>
+
+            And no matter how old you get,
+            you'll always be
+
+            <strong>
+                my Varshu Tokdi. 🥹❤️
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            Here's to 20, and to all the beautiful
+            things waiting for you. 🌷
+
+        </p>
+
+
+        <p>
+
+            With lots and lots of love,
+            <br>
+
+            <strong>
+                Your didi 🤍
+            </strong>
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+/* =====================================================
+   OPEN SURPRISE
+===================================================== */
+
+function openSurprise() {
+
+
+    /* Hide first screen */
+
+    document
+        .getElementById("opening")
+        .style.display = "none";
+
+
+    /* Show second screen */
+
+    document
+        .getElementById("birthday")
+        .style.display = "block";
+
+
+    const gift =
+        document.getElementById("gift");
+
+    const birthdayText =
+        document.getElementById("birthdayText");
+
+
+    /* ================================================
+       GIFT SHAKE
+    ================================================= */
+
+    setTimeout(function() {
+
+        gift.classList.add("shake");
+
+    }, 400);
+
+
+    /* ================================================
+       OPEN GIFT
+    ================================================= */
+
+    setTimeout(function() {
+
+        gift.classList.remove("shake");
+
+        gift.classList.add("open");
+
+    }, 1200);
+
+
+    /* ================================================
+       MESSAGE RISES FROM BOX
+    ================================================= */
+
+    setTimeout(function() {
+
+        birthdayText.classList.add("show");
+
+    }, 1450);
+
+
+    /* ================================================
+       BALLOONS
+    ================================================= */
+
+    setTimeout(function() {
+
+        document
+            .querySelectorAll(".balloon")
+            .forEach(function(balloon) {
+
+                balloon.classList.add("fly");
+
+            });
+
+    }, 850);
+
+
+    /* ================================================
+       RIBBONS
+    ================================================= */
+
+    setTimeout(function() {
+
+        document
+            .querySelectorAll(".ribbon")
+            .forEach(function(ribbon) {
+
+                ribbon.classList.add("fly");
+
+            });
+
+    }, 900);
+
+
+    /* ================================================
+       CONFETTI
+    ================================================= */
+
+    setTimeout(function() {
+
+        document
+            .querySelectorAll(".confetti-piece")
+            .forEach(function(piece) {
+
+                piece.classList.add("fly");
+
+            });
+
+    }, 1050);
+
+
+    /* ================================================
+       FLOATING HEARTS
+    ================================================= */
+
+    setInterval(
+        createHeart,
+        650
+    );
+
+
+    /* ================================================
+       SPARKLES
+    ================================================= */
+
+    setInterval(
+        createSparkle,
+        400
+    );
+
+
+    /* ================================================
+       CONTINUE BUTTON
+    ================================================= */
+
+    setTimeout(function() {
+
+        document
+            .getElementById("continueButton")
+            .classList.add("show");
+
+    }, 3300);
+
+}
+
+
+
+/* =====================================================
+   CREATE FLOATING HEART
+===================================================== */
+
+function createHeart() {
+
+
+    const birthday =
+        document.getElementById("birthday");
+
+
+    if (
+        birthday.style.display === "none"
+    ) {
+
+        return;
+
+    }
+
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className =
+        "floating-heart";
+
+
+    const heartChoices = [
+
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "🤍",
+        "♡"
+
+    ];
+
+
+    heart.innerHTML =
+        heartChoices[
+            Math.floor(
+                Math.random() *
+                heartChoices.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random() * 95 + "%";
+
+
+    heart.style.fontSize =
+        (
+            15 +
+            Math.random() * 18
+        ) + "px";
+
+
+    heart.style.animationDuration =
+        (
+            4 +
+            Math.random() * 3
+        ) + "s";
+
+
+    birthday.appendChild(heart);
+
+
+    setTimeout(function() {
+
+        heart.remove();
+
+    }, 7500);
+
+}
+
+
+
+/* =====================================================
+   CREATE SPARKLE
+===================================================== */
+
+function createSparkle() {
+
+
+    const birthday =
+        document.getElementById("birthday");
+
+
+    if (
+        birthday.style.display === "none"
+    ) {
+
+        return;
+
+    }
+
+
+    const sparkle =
+        document.createElement("div");
+
+
+    sparkle.className =
+        "sparkle";
+
+
+    sparkle.style.left =
+        Math.random() * 100 + "%";
+
+
+    sparkle.style.top =
+        Math.random() * 90 + "%";
+
+
+    birthday.appendChild(sparkle);
+
+
+    setTimeout(function() {
+
+        sparkle.remove();
+
+    }, 2000);
+
+}
+
+
+
+/* =====================================================
+   SHOW THIRD SCREEN
+===================================================== */
+
+function showMessage() {
+
+
+    const birthday =
+        document.getElementById("birthday");
+
+
+    const message =
+        document.getElementById("message");
+
+
+    /* Create magical particles */
+
+    for (
+        let i = 0;
+        i < 45;
+        i++
+    ) {
+
+
+        const particle =
+            document.createElement("div");
+
+
+        particle.className =
+            "transition-particle";
+
+
+        particle.style.left =
+            "50%";
+
+
+        particle.style.top =
+            "50%";
+
+
+        const x =
+            (
+                Math.random() * 700
+                - 350
+            ) + "px";
+
+
+        const y =
+            (
+                Math.random() * 700
+                - 350
+            ) + "px";
+
+
+        particle.style.setProperty(
+            "--x",
+            x
+        );
+
+
+        particle.style.setProperty(
+            "--y",
+            y
+        );
+
+
+        document.body.appendChild(
+            particle
+        );
+
+
+        setTimeout(function() {
+
+            particle.remove();
+
+        }, 1500);
+
+    }
+
+
+    /* Fade out birthday screen */
+
+    birthday.style.transition =
+        "opacity 1s ease";
+
+
+    birthday.style.opacity = "0";
+
+
+    setTimeout(function() {
+
+
+        birthday.style.display =
+            "none";
+
+
+        message.style.display =
+            "flex";
+
+
+        message.style.opacity =
+            "0";
+
+
+        message.style.transition =
+            "opacity 1.2s ease";
+
+
+        setTimeout(function() {
+
+            message.style.opacity =
+                "1";
+
+        }, 100);
+
+
+    }, 1000);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
